@@ -2,13 +2,16 @@ import express from 'express';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 dotenv.config();
-import morgan from 'morgan'
+import morgan from 'morgan';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 import fileUpload from 'express-fileupload';
 import usersRoute from './routes/usersRoute.js';
 import kanbanRoute from './routes/kanbanRoute.js'
 import tasksRoute from './routes/tasksRoute.js';
 import notesRoute from './routes/notesRoute.js';
 
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 
