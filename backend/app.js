@@ -37,7 +37,7 @@ app.use((req,res,next)=> {
 })
 
 app.get('/', (req,res,next) => {
-    res.sendFile('views/build/index.html', {root: '.'})
+    res.sendFile('/views/build/index.html', {root: '.'})
 })
 
 app.use("/users", usersRoute);
