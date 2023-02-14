@@ -12,7 +12,7 @@ import notesRoute from './routes/notesRoute.js';
 
 const app = express();
 
-const PORT = 4000;
+const PORT = process.env.PORT;
 
 mongoose.set("strictQuery", false);
 
