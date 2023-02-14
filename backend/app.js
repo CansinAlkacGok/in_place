@@ -27,7 +27,7 @@ app.use(morgan("dev"));
 
 app.use(express.json());
 
-app.use(express.static('./views/build'))
+app.use(express.static(__dirname + '/views/build'))
 
 app.use(express.urlencoded({extended:true}))
 
@@ -40,7 +40,7 @@ app.use((req,res,next)=> {
 })
 
 app.get('/', (req,res,next) => {
-    res.sendFile('/views/build/index.html', {root: '.'})
+    res.sendFile(__dirname + '/views/build/index.html')
 })
 
 app.use("/users", usersRoute);
