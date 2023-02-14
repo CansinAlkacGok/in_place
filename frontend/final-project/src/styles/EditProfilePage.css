@@ -1,0 +1,59 @@
+
+.edit-profile-container {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding: 2rem;
+    width:clamp(20rem, -0.875rem + 40.333vw, 50rem);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: linear-gradient(
+      0deg,
+      rgb(249, 224, 245) 0%,
+      rgba(166, 223, 241, 0.9) 50%,
+      rgba(135, 208, 224, 0.9) 100%
+    );
+    /* font-size: clamp(0.6rem, -0.875rem + 2.333vw, 1.5rem); */
+    font-size:clamp(0.8rem, -0.875rem + 3.333vw, 2.5rem)
+}
+
+.edit-profile-container h1 {
+    font-size:clamp(1.3rem, -0.875rem + 3.333vw, 2rem)
+  }
+
+.profile-edit-form {
+    font-weight: 600;
+    margin: 2rem 0;
+    padding: 2rem 2rem 1.5rem 2rem; 
+    width: 80%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: clamp(0.6rem, -0.875rem + 2.333vw, 1.5rem);
+
+  }
+
+  .profile-edit-form input{
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    border: none;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    width: 90%;
+    font-size: clamp(0.6rem, -0.875rem + 2.333vw, 1.5rem);
+    margin: 0.5rem 0;
+  }
+
+  .profile-edit-form span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  @media only screen and (max-width: 800px) {
+    .edit-profile-container {
+      width: 90%;
+  }
+  }

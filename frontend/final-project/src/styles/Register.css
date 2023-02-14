@@ -1,0 +1,83 @@
+.regPage {
+  width: 50vw;
+  /*   height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  text-align: center;
+}
+
+.register-container {
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30vw;
+  /*  margin: 0 auto; */
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: linear-gradient(
+    0deg,
+    rgb(249, 224, 245) 0%,
+    rgba(166, 223, 241, 0.9) 50%,
+    rgba(135, 208, 224, 0.9) 100%
+  );
+}
+
+.register-container h1 {
+  font-size: clamp(1.7rem, 1.3rem, 2rem);
+}
+
+.register-form-container {
+  width: 60%;
+  /*   margin: 1rem; */
+  font-size: clamp(1rem, 1rem, 2rem);
+}
+
+.register-form-container label {
+  font-size: clamp(1rem, 1.2rem, 2rem);
+  font-weight: 600;
+}
+
+.register-container input {
+  border-radius: 5px;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.3rem 0.5rem;
+}
+
+.span-register {
+  display: flex;
+  justify-content: center;
+}
+
+.register-form-container button {
+  width: fit-content;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(82, 219, 212);
+  padding: 0.3rem 0.5rem;
+  font-weight: 600;
+}
+
+.register-form-container button:hover {
+  background-color: rgb(22, 219, 154);
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .regPage {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .register-container {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+  }
+}
